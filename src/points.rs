@@ -1,4 +1,5 @@
 use once_cell::sync::Lazy;
+use std::vec::Vec;
 use subtle::ConditionallySelectable;
 
 use super::errors::{InfinityPointError, InvalidPointBytes, InvalidPointString};

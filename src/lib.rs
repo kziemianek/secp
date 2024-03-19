@@ -1,5 +1,7 @@
 #![doc = include_str!("../README.md")]
 #![doc = include_str!("../doc/API.md")]
+#![no_std]
+extern crate sgx_tstd as std;
 
 #[cfg(all(not(feature = "secp256k1"), not(feature = "k256")))]
 compile_error!("At least one of the `secp256k1` or `k256` features must be enabled.");
