@@ -12,7 +12,7 @@ keywords = ["secp256k1", "k256", "elliptic", "curve", "schnorr"]
 [dependencies]
 base16ct = { version = "0.2.0", default-features = false }
 crypto-bigint = { version = "0.5.3", default-features = false, optional = true }
-k256 = { version = "0.13.1", optional = true, default-features = false, features = ["alloc", "arithmetic"] }
+k256 = {branch = "sgx-sha-workaround", git = "https://github.com/kziemianek/elliptic-curves.git", optional = true, default-features = false, features = ["alloc", "arithmetic"] }
 num-traits = { version = "0.2.18", default-features = false, optional = true }
 once_cell = { package = "once_cell", branch = "master", git = "https://github.com/mesalock-linux/once_cell-sgx" }
 rand = { version = "0.8.5", optional = true, default-features = false }
